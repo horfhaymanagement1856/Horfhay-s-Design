@@ -1,0 +1,218 @@
+/* Body */
+body {
+    align-items: center;
+    background-color: black;
+}
+
+body::before {
+    background-color: black;
+    content: "";
+    position: absolute;
+    width: 70%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+
+/* Navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: white;
+    border-radius: 70px;
+    position: absolute;
+    height: 110%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+#navbar ul li {
+    float: left;
+    list-style: none;
+    margin: 0 30px;
+    font-size: 1.2rem;
+    font-family: "Capriola", sans-serif;
+}
+
+#navbar ul li a {
+    transition: all 0.5s;
+    position: relative;
+    top: 4px;
+    display: block;
+    padding: 10px 13px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background-color: black;
+    color: red;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+
+/* Home */
+#home {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+#home::before {
+    content: "";
+    background: url('bg.png')no-repeat center center/cover;
+    position: absolute;
+    height: 604px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.89;
+}
+
+#home h1 {
+    font-size: 3rem;
+    position: relative;
+    top: 80px;
+    font-family: "Capriola", sans-serif;
+}
+
+#home p {
+    position: relative;
+    padding: 10px 350px;
+    top: 70px;
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#btn {
+    display: block;
+    padding: 20px 25px 20px 25px;
+    margin: 150px;
+    position: relative;
+    left: 506px;
+    border: 2px solid red;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: red;
+}
+
+#btn:hover {
+    color: orange;
+    border: 2px solid orange;
+    transition: all 0.5s;
+}
+
+/* Meals */
+
+.top {
+    text-align: center;
+    color: white;
+}
+
+.top h1 {
+    font-family: "Capriola", sans-serif;
+}
+
+.top p {
+    font-family: "Ubuntu", sans-serif;
+    padding: 10px 200px;
+}
+
+.top span {
+    color: red
+}
+
+/* Products */
+.container {
+    position: relative;
+    right: 463px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9rem;
+    width: 90%;
+    padding: 190px 135px;
+    margin-bottom: 50px;
+}
+
+.item img {
+
+    box-shadow: 3px 3px 10px red;
+}
+
+.item {
+    color: white;
+    border-radius: 30px;
+    background-color: none;
+    position: relative;
+    left: 360px;
+    width: 120%;
+    height: 60%;
+}
+
+.item img {
+    border-radius: 30px;
+    height: 80%;
+    width: 120%;
+    display: block;
+    margin: auto;
+}
+
+.item h3 {
+    font-size: 17px;
+    font-family: "Capriola", sans-serif;
+    text-align: justify;
+}
+
+.item p {
+    font-size: 17px;
+    font-family: "Ubuntu", sans-serif;
+    text-align: justify;
+    color: red;
+}
+
+.btn1 {
+    display: block;
+    padding: 10px 50px;
+    margin: -10px auto;
+    border: 2px solid orange;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: black;
+    color: orange;
+}
+
+.btn1:hover {
+    color: red;
+    border: 2px solid red;
+    transition: all 0.5s;
+}
+
+.Yumie:hover {
+    border: 2px solid orange;
+    box-shadow: 5px 5px 15px orange;
+    transition: all 0.3s;
+
+}
+
+span {
+    color: red;
+}
+
+span1 {
+    color: orange;
+}
